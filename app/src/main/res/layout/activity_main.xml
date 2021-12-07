@@ -13,7 +13,7 @@
         android:layout_width="129dp"
         android:layout_height="134dp"
         android:background="@drawable/button_custom"
-        android:text="@string/CovidInformationHub"
+        android:text="Upload to cloud"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         android:textColor="@color/black"
         android:textSize="14sp"
