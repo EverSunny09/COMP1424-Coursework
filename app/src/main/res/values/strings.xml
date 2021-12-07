@@ -1,0 +1,32 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">COMP1424</string>
+    <string name="title">M-Expense</string>
+    <string name="icon">icon</string>
+    <string name="ic_back">ic_back</string>
+    <string name="search_icon">Search icon</string>
+    <string name="Search">Search</string>
+    <string name="image">mainImage</string>
+    <string name="ClaimNewTrip">Claim New Trip</string>
+    <string name="MyTrips">My Trips</string>
+    <string name="CovidInformationHub">Covid Info Hub</string>
+    <string name="AddExp">Add Expenses</string>
+    <string name="Logo">logo</string>
+    <string name="intro">Claim travel expenses for work purposes today. You are one click away from your reimbursement. </string>
+    <string name="SearchTrip">Search for a trip:</string>
+    <string name="NameOfTripSearch">Name of trip:</string>
+    <string name="DestinationSearch">Destination:</string>
+    <string name="tripDate">Date:</string>
+    <string name="SearchButton">SEARCH TRIPS</string>
+    <string name="editText">ex conference</string>
+    <string name="DestinationIdSearch">ex London</string>
+    <string name="UpcomingTxt">UPCOMING TRIPS:</string>
+    <string name="PastTxt">PAST TRIPS:</string>
+    <string name="DetailsUpcomingTrips">Conference-Brighton 21/12/2021</string>
+    <string name="DetailsPastTrips">Client meeting-New York 14/08/2021</string>
+    <string name="trip_date">Date of the trip</string>
+    <string name="et_date">Select a date</string>
+
+    <string name="url">https://stuiis.cms.gre.ac.uk/COMP1424CoreWS/comp1424cw</string>
+
+
+</resources>

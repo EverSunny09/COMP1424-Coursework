@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/nameTrip"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Name of the trip"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/destination"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTrip"
+        android:layout_marginLeft="20dp"
+        android:text="Destination"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/date"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/nameTrip"
+        android:text="Date of the trip"
+        android:textColor="@color/white" />
+
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/destination"
+        android:layout_alignParentRight="true"
+        android:drawableBottom="@drawable/deletebutton" />
+
+    <Button
+        android:id="@+id/editBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/destination"
+        android:layout_toLeftOf="@+id/deleteBtn"
+        android:drawableBottom="@drawable/ic_baseline_edit_24" />
+
+    <Button
+        android:id="@+id/expensesBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/destination"
+        android:layout_toLeftOf="@+id/editBtn"
+        android:drawableBottom="@drawable/eyebutton" />
+
+
+</RelativeLayout>
