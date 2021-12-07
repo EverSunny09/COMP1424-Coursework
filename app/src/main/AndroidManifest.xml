@@ -26,12 +26,6 @@
             android:name=".AddExpenses"
             android:exported="false" />
         <activity
-            android:name=".CovidInformationHub"
-            android:exported="false" />
-        <activity
-            android:name=".ScanExtraDocuments"
-            android:exported="false" />
-        <activity
             android:name=".MyTrips"
             android:exported="false" />
         <activity

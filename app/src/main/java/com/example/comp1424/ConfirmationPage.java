@@ -32,10 +32,6 @@ public class ConfirmationPage extends AppCompatActivity {
         description = intent.getStringExtra("description");
         transmethod = intent.getStringExtra("transmethod");
         vendorname = intent.getStringExtra("vendorname");
-    /*    typeofexpense = intent.getStringExtra("typeofexpense");
-        amountofexpense = intent.getStringExtra("amountofexpense");
-        timeoftheexpense = intent.getStringExtra("timeoftheexpense");
-        additionalcomments = intent.getStringExtra("additionalcomments");*/
         dateToDB = intent.getStringExtra("dateToDB");
 
 
@@ -45,10 +41,6 @@ public class ConfirmationPage extends AppCompatActivity {
         DescOfTrip = (TextView) findViewById(R.id.description);
         TransMethod = (TextView) findViewById(R.id.transmethod);
         VenName = (TextView) findViewById(R.id.vendorname);
-       /* TypeOfExpense = (EditText) findViewById(R.id.typeofexpense);
-        AmountOfExpenses = (EditText) findViewById(R.id.amountofexpenses);
-        TimeOftheExpense = (EditText) findViewById(R.id.timeoftheexpense);
-        AdditionalComments = (EditText) findViewById(R.id.additionalcomments);*/
 
         nameOfTrip.setText(tripName);
         DestOfTrip.setText(destination);
@@ -58,10 +50,6 @@ public class ConfirmationPage extends AppCompatActivity {
         VenName.setText(vendorname);
 
         trip_id = intent.getStringExtra("trip_id");
-        /*TypeOfExpense.setText(typeofexpense);
-        AmountOfExpenses.setText(amountofexpense);
-        TimeOftheExpense.setText(timeoftheexpense);
-        AdditionalComments.setText(additionalcomments);*/
 
 
     }
