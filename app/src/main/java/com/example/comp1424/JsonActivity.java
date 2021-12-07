@@ -2,6 +2,7 @@ package com.example.comp1424;
 
 import android.os.Bundle;
 import android.webkit.WebView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,7 +24,7 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
 public class JsonActivity extends AppCompatActivity {
-    public WebView webView;
+    public WebView webView,request;
     public String jsonString;
     public List<DetailJson> tripList;
     @Override
@@ -31,8 +32,13 @@ public class JsonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_json);
         webView = findViewById(R.id.webkit);
+        request = findViewById(R.id.request);
         jsonString = createJSON();
         setBrowserJob(jsonString);
+    }
+
+    private String generatePage(String content) {
+        return "<html><body><p>" + content + "</p></body></html>";
     }
 
     public void setBrowserJob(String JSON){
@@ -43,6 +49,8 @@ public class JsonActivity extends AppCompatActivity {
 
             JsonRequestThread task = new JsonRequestThread(this,con,JSON);
             Thread thread = new Thread(task, "JSON Trip Data");
+            String page = generatePage(JSON);
+            request.loadData(page, "text/html", "UTF-8");
             thread.start();
 
         } catch (IOException e) {
@@ -77,7 +85,7 @@ public class JsonActivity extends AppCompatActivity {
 
     private String createJSON(){
         AllTripJsonObject allTripJsonObject = new AllTripJsonObject();
-        allTripJsonObject.setUserId("dc2762i");
+        allTripJsonObject.setUserId("sc2008y");
         allTripJsonObject.setDetailList(getTripDetails());
         Gson jsonObject = new Gson();
         return jsonObject.toJson(allTripJsonObject);
